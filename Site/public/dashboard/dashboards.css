@@ -1,0 +1,51 @@
+/* pagina mural */
+
+*,
+body {
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+}
+
+/* pagina graficos */
+
+.dash-header {
+  background-color: #10002b;
+}
+
+.dash {
+  width: 75%;
+  position: relative;
+  top: 0;
+  left: 25%;
+  background-color: #240046;
+  height: 100vh;
+}
+
+.graph {
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.tituloGraficos {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.botao {
+  font-family: "Exo 2", sans-serif;
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: #c77dff;
+  background-color: white;
+  margin: 5px;
+  border-radius: 3px;
+  cursor: pointer;  
+}
+

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Montserrat:wght@400;600&family=Sarala:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Prisma";
+    src: url("../font/Prisma.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: linear-gradient(180deg, #10002b 0%, 50%, #3db7ed 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+body{
+    background: linear-gradient(180deg, #10002b 0%, 50%, #26627c 100%);
+}
+
+/* Header */
+.navbar {
+    background-color: #10002B;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+}
+
+.navbar img {
+    height: 52.5px;
+    width: 206px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    background-color: #10002B;
+}
+
+.navbar li {
+    display: flex;
+    margin: 5px 15px;
+    color: #FFFFFF;
+    align-items: center;
+    transition: 0.6s;
+    position: relative;
+}
+
+.navbar li::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #E0AAFF;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.navbar li:hover::after {
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    background-color: #10002B;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar ul ul li {
+    float: none;
+    display: list-item;
+    position: relative;
+    width: 140px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+}
+
+.navbar ul li:hover>ul {
+    display: block;
+}
+
+.navbar ul ul li {
+    position: relative;
+}
+
+.navbar ul ul ul {
+    margin-left: 138px;
+    margin-top: -30px;
+    padding: 0px;
+    width: 150px;
+    height: auto;
+}
+
+.navbar ul ul ul li {
+    position: relative;
+    background-color: #E0AAFF;
+    margin-top: 8px;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Dance central*/
+#divdc {
+    background-color: #10002B;
+}
+
+.vidDC {
+    width: 50%;
+    margin: 25px;
+}
+
+.dancecentral {
+    width: 45%;
+    float: right;
+    align-items: center;
+}
+
+.dancecentral p {
+    text-align: center;
+    margin: 25px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.dancecentral img {
+    width: 250px;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+
+.dancecentral a {
+    margin-left: 25%;
+    font-size: 50px;
+}
+
+.redtexto {
+    background: #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Prisma;
+    text-align: center;
+    font-size: 50px;
+}
+
+.redtexto:hover {
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #ff008c, 0 0 10px #26627c;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Divisão */
+.divisao {
+    height: 100px;
+    background: linear-gradient(180deg, #10002b 0%, 50%, #26627c 100%);
+    text-align: center;
+}
+
+.txt {
+    background: transparent;
+    color: #ffff;
+    font-size: 120px;
+    font-family: Prisma;
+    text-shadow: 0 0 5px #000000, 0 0 10px #ff008c, 0 0 10px #ff008c, 0 0 10px #ff008c;
+    margin-left: 40%;
+}
+
+
+
+/* Just Dance */
+#divJD {
+    background-color: #26627c;
+}
+
+.vidJD {
+    width: 50%;
+    margin: 25px;
+    margin-top: 70px;2
+}
+
+.justdance {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 25px;
+    width: 45%;
+    float: left;
+    align-items: center;
+}
+
+.justdance p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.justdance img {
+    width: 300px;
+}
+
+/* --FOOTER--*/
+
+.footer {
+    height: 250px;
+    background: linear-gradient(180deg, #26627c 0%, #10002b 100%);
+    align-items: center;
+}
+
+/*as medidas estão na metade*/
+.footer img {
+    float: left;
+    height: 52.5px;
+    width: 206px;
+    margin-top: 25px;
+}
+
+.container{
+    float: left;
+    margin-left: 20%;
+}
+
+/*--LINKS--*/
+
+.links {
+    float: left;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+.links ul{
+    font-size: 20px;
+}
+
+.links li {
+    margin-top: 6px;
+    margin-right: 50px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    background: transparent;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.links ul {
+    width: auto;
+    list-style: none;
+}
+
+/* redes sociais */
+.media {
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.media img {
+    align-items: center;
+    margin-top: 7px;
+    height: 30px;
+    margin-left: 15px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.media h4 {
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+}
+
+/* direitos */
+.copyright {
+    background-color: #10002B;
+    margin: auto;
+    text-align: center;
+}

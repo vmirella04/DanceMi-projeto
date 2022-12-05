@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Montserrat:wght@400;600&family=Sarala:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Prisma";
+    src: url("../font/Prisma.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    background-color: #10002B;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3C096C;
+    border-radius: 20px;
+}
+
+.navbar {
+    color: #10002B;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+}
+
+.navbar img {
+    height: 52.5px;
+    width: 206px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.navbar li {
+    display: flex;
+    margin: 2px 15px;
+    color: #FFFFFF;
+    align-items: center;
+    transition: 0.6s;
+    position: relative;
+}
+
+.navbar li::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #E0AAFF;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+.navbar li:hover::after {
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navbar ul li {
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar ul ul li {
+    float: none;
+    display: list-item;
+    position: relative;
+    width: 140px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+}
+
+.navbar ul li:hover>ul {
+    display: block;
+    cursor: pointer;
+}
+
+.navbar ul ul li {
+    position: relative;
+}
+
+.navbar ul ul ul {
+    margin-left: 138px;
+    margin-top: -30px;
+    padding: 0px;
+    width: 150px;
+    height: auto;
+}
+
+.navbar ul ul ul li {
+    position: relative;
+    background-color: #E0AAFF;
+    margin-top: 8px;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Equipes*/
+.dctitulo {
+    background-image: url(../assets/gradientDC.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Prisma;
+    text-align: center;
+    font-size: 100px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    font-family: Prisma;
+}
+
+.equipes{
+    height: 400px;
+}
+
+.equipes p{
+    text-align: center;
+    font-size: 110%;
+}
+
+.gallery {
+    align-items: center;
+    margin-top: 50px;
+    height: 50px;
+    margin-left: 200px;
+}
+
+.card {
+    height: 220px;
+    width: 150px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    transition: 0.5s all ease-in-out;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    width: 200px;
+}
+
+.card#flash {
+    background-image: url(../assets/banners/flash.png);
+}
+
+.card#flash:hover {
+    background-image: url(../assets/banners/flashplayers.png);
+}
+
+.card#glitter {
+    background-image: url(../assets/banners/gliterrati.png);
+}
+
+.card#glitter:hover {
+    background-image: url(../assets/banners/gliterratiplayers.png);
+}
+
+.card#HD {
+    background-image: url(../assets/banners/Hi\ def.png);
+}
+
+.card#HD:hover {
+    background-image: url(../assets/banners/hidefplayers.png);
+}
+
+.card#lush {
+    background-image: url(../assets/banners/lush.jfif);
+}
+
+.card#lush:hover {
+    background-image: url(../assets/banners/lushplayers.png);
+}
+
+.card#ripitide {
+    background-image: url(../assets/banners/repitide.png);
+}
+
+.card#ripitide:hover {
+    background-image: url(../assets/banners/repitideplayers.png);
+}
+
+/*ABAS*/
+
+.modojogoDC{
+    text-align: center;
+    height: 450px;
+}
+
+.modojogoDC nav a{
+    padding: 10px;
+    display: inline-block;
+    font-family: Prisma;
+    font-size: 30px;
+}
+
+.modojogoDC nav a:hover{
+    text-decoration: underline #E0AAFF;
+}
+
+.modojogoDC div{
+    display: none;
+    text-align: center;
+    margin: 0% 5% 0% 5%;
+}
+
+.modojogoDC div:target{
+    display: block;
+}
+
+.modojogoDC div video{
+    width: 450px;
+    float: left;
+    margin: 2% 5% 2% 5%;
+}
+
+.modojogoDC div h1{
+    font-family: Prisma;
+    font-size: 35px;
+    padding: 1% 5% 1% 0%;
+}
+
+.modojogoDC div p{
+    font-size: 20px;
+    margin-right: 5%;
+    
+}
+
+/*Plataformas*/
+
+.plataformas{
+    text-align: center;
+}
+
+.plataformas div{
+    display: inline-block;
+    margin: 2% 5% 1% 5%;
+}
+
+.plataformas h2{
+    font-family: Prisma;
+}
+
+.plataformas img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2%;
+}
+
+/*Just dance*/
+.jdtitulo {
+    background-image: url(../assets/gradientJD.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Prisma;
+    text-align: center;
+    font-size: 100px;
+}
+
+.jd2023 p{
+    text-align: center;
+    margin: 1% 12% 1% 12%;
+}
+
+.jd2023 iframe{
+    margin-left: 29%;
+}
+
+.modojogoJD{
+    text-align: center;
+    height: 450px;
+}
+
+.modojogoJD nav a{
+    padding: 10px;
+    display: inline-block;
+    font-family: Prisma;
+    font-size: 30px;
+}
+
+.modojogoJD nav a:hover{
+    text-decoration: underline #E0AAFF;
+}
+
+.modojogoJD div{
+    display: none;
+    text-align: center;
+    margin: 0% 5% 0% 5%;
+}
+
+.modojogoJD div:target{
+    display: block;
+}
+
+.modojogoJD div video{
+    width: 450px;
+    float: left;
+    margin: 2% 5% 2% 5%;
+}
+
+.modojogoJD iframe{
+    width: 450px;
+    height: 260px;
+    float: left;
+    margin: 2% 5% 2% 5%;
+}
+
+.modojogoJD img{
+    width: 450px;
+    height: 260px;
+    float: left;
+    margin: 2% 5% 2% 5%;
+}
+
+.modojogoJD div h1{
+    font-family: Prisma;
+    font-size: 35px;
+    padding: 3% 5% 1% 0%;
+}
+
+.modojogoJD div p{
+    font-size: 20px;
+    margin-right: 5%;
+}
+/* --FOOTER--*/
+
+.footer {
+    margin-left: 18%;
+    height: 200px;
+    display: block;
+    align-items: center;
+}
+
+/*as medidas estão na metade*/
+.footer img {
+    float: left;
+    height: 52.5px;
+    width: 206px;
+    margin-top: 25px;
+}
+
+/*--LINKS--*/
+
+.links {
+    float: left;
+    margin-top: 25px;
+    margin-left: 250px;
+}
+
+.links ul{
+    font-size: 20px;
+}
+
+.links li {
+    margin-top: 6px;
+    margin-right: 50px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    background: transparent;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.links ul {
+    width: auto;
+    list-style: none;
+}
+
+/* redes sociais */
+.media {
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.media img {
+    align-items: center;
+    margin-top: 7px;
+    height: 30px;
+    margin-left: 15px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.media h4 {
+    text-align: center;
+    font-size: 20px;
+    cursor: default;
+}
+
+/* direitos */
+.copyright {
+    margin: auto;
+    text-align: center;
+}
